@@ -14,13 +14,10 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="System.Drawing.Common" Version="6.0.0-preview.7.21377.19" />
-        <Protobuf Include="Protos\model.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\predict.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\prediction_service.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\resource_handle.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\tensor.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\tensor_shape.proto" ProtoRoot="Protos\" />
-        <Protobuf Include="Protos\types.proto" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\*.proto" ProtoRoot="Protos\" />
+        <Content Include="mnist_test_eight.png">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
     
 </Project>
