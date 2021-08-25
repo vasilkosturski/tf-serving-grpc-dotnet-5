@@ -1,0 +1,4 @@
+cd TfServingGrpcDotNetClient\TfServingGrpcDotNetClient
+dotnet restore
+dotnet build
+dotnet run
