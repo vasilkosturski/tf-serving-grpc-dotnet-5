@@ -1,5 +1,7 @@
 # tf-serving-grpc-dotnet-5
-A .NET 5 Console App consuming a TensorFlow 2 model hosted via TensorFlow Serving gRPC Endpoint in Docker
+A .NET 5 Console App consuming a TensorFlow 2 model hosted via TensorFlow Serving gRPC Endpoint in Docker.
+
+Read [the related article](https://vkontech.com/tensorflow-serving-grpc-endpoint-in-docker-with-a-net-5-client/) for a detailed overview.
 
 The repository contains the .NET 5 console app and the artifacts required to build and host the Machine Learning model in Docker with TF Serving.
 The ML model is a simple MNIST digits predictor.
