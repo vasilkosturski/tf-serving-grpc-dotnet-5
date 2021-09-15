@@ -66,9 +66,11 @@ namespace TfServingGrpcDotNetClient
             imageFeatureShape.Dim.Add(new TensorShapeProto.Types.Dim() { Size = 1 });
             imageFeatureShape.Dim.Add(new TensorShapeProto.Types.Dim() { Size = imageData.Length * imageData.Length });
 
-            var imageTensorBuilder = new TensorProto();
-            imageTensorBuilder.Dtype = DataType.DtFloat;
-            imageTensorBuilder.TensorShape = imageFeatureShape;
+            var imageTensorBuilder = new TensorProto
+            {
+                Dtype = DataType.DtFloat,
+                TensorShape = imageFeatureShape
+            };
 
             for (int i = 0; i < imageData.Length; ++i)
             {
